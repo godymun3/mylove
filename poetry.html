@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стихи</title>
+    <link rel="stylesheet" href="poetry.css">
+    <link rel="icon" href="butterfly.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Фон: звёзды и луна -->
+    <div class="background">
+        <div class="stars-container"></div>
+        <div class="moon"></div>
+    </div>
+
+    <!-- Кнопка "Домой" -->
+    <a href="soshi.html" class="home-btn">← На главную</a>
+
+    <!-- Навигация слева -->
+    <nav class="poetry-nav" id="poetryNav">
+        <!-- Заполнится через JS -->
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Стихи</h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <main class="poems-container" id="poemsContainer">
+            <!-- Стихи будут здесь -->
+        </main>
+
+
+    <!-- Модальное окно подсказки -->
+    <div class="modal" id="bookmarkTip">
+        <div class="modal-content">
+            <p class="modal-text">Теперь этот стих помечен как любимый ❤️</p>
+            <button class="modal-btn">Хорошо, хозяин</button>
+        </div>
+    </div>
+        
+        <footer class="poetry-footer">
+            <p>Создано для Соши | © Твой котёнок. 2026</p>
+        </footer>
+    </div>
+    
+    <!-- Подсказка для навигации -->
+<div class="modal" id="navTip">
+    <div class="modal-content">
+        <p class="modal-text">Нажав на эту кнопку ты можешь скрыть/показать навигационное меню по стихам</p>
+        <button class="modal-btn">Хорошо, хозяин</button>
+    </div>
+</div>
+    
+<!-- Кнопка "наверх" -->
+<button class="back-to-top" id="backToTop" onselectstart="return false" ondragstart="return false">
+    <span>↑</span>
+</button>
+
+<!-- Кнопка меню -->
+<div class="mobile-nav-toggle">
+    <button id="navToggleBtn" class="nav-toggle-btn" onselectstart="return false" ondragstart="return false">+</button>
+</div>
+
+ <!-- Модальное окно — ТОЛЬКО ЗДЕСЬ -->
+<div id="rewardModal" class="modal">
+    <div class="modal-content">
+        <p class="modal-text">Если бы у меня попросили назвать самый прекрасный цвет в мире, я бы, не задумываясь, сказал: «Цвет твоих глаз».</p>
+        <button id="closeModalBtn" class="modal-close-btn">(づ˶ᵔ ᵕ ᵔ˶)づ♡</button>
+    </div>
+</div>
+
+<!-- Подложка под модалку -->
+<div id="modalOverlay" class="modal-overlay hidden"></div>
+    
+    <script src="poetry.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
